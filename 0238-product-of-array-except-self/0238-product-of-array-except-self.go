@@ -11,6 +11,5 @@ func productExceptSelf(nums []int) []int {
 		res[i] *= post
 		post *= nums[i]
 	}
-
 	return res
 }
