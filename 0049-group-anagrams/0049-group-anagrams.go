@@ -1,5 +1,5 @@
 func groupAnagrams(strs []string) [][]string {
-    m := make(map[string][]string)
+  m := make(map[string][]string)
 	for _, s := range strs {
 		temp := strings.Split(s, "")
 		sort.Strings(temp)
@@ -15,5 +15,4 @@ func groupAnagrams(strs []string) [][]string {
         res = append(res, v)
     }
 	return res
-
 }
